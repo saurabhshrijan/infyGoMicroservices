@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.infosys.infyGo</groupId>
-	<artifactId>infyGo-CustomerMS</artifactId>
+	<artifactId>infyGo-BookFlightMS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>infyGo-CustomerMS</name>
-	<description>Spring boot rest customer microservice</description>
+	<name>infyGo-BookFlightMS</name>
+	<description>Spring boot rest BookFlightMS</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -29,14 +29,20 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-
-<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
-		<dependency>
-    		<groupId>javax.validation</groupId>
-    		<artifactId>validation-api</artifactId>
 		</dependency>
 
 		<dependency>
@@ -44,12 +50,6 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-		<dependency>
-    		<groupId>org.springframework.boot</groupId>
-    		<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

@@ -3,6 +3,11 @@ package com.infosys.infyGo.customer.dto;
 import javax.validation.constraints.NotEmpty;
 
 public class LoginDTO {
+	@Override
+	public String toString() {
+		return "LoginDTO [userId=" + userId + ", password=" + password + "]";
+	}
+
 	@NotEmpty(message = "Please enter your userid")
 	private String userId;
 

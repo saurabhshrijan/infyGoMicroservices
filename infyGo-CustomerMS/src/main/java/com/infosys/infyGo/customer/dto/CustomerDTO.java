@@ -7,6 +7,12 @@ import javax.validation.constraints.Size;
 import com.infosys.infyGo.customer.entity.Customer;
 
 public class CustomerDTO {
+	@Override
+	public String toString() {
+		return "CustomerDTO [userId=" + userId + ", password=" + password + ", name=" + name + ", city=" + city
+				+ ", email=" + email + ", phone=" + phone + "]";
+	}
+
 	@NotNull(message = "UserId must not be blank.")
 	@Size(min = 4, max = 15, message = "UserId must be between 4 to 15 Characters.")
 	private String userId;
